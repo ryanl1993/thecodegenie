@@ -244,7 +244,32 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Contact Me</h2>
                     <p>There are many ways in which you can make contact with myself.<br>Please either complete the form below or click on the relevant social icons and message me there.</p>
-                    
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <input id="form-name" type="text" name="name" class="form-control roundcorners" placeholder="Enter your Name here">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="email" name="mail" id="form-email" class="form-control roundcorners" placeholder="Enter your email here">
+                                </div>
+                            </div>
+                        </div>
+                        <p></p>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <textarea name="message" id="form_message" class="form-control roundcorners" placeholder="Enter your message here"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="submit" name="submit" class="btn btn-outline-dark" value="Submit">
+                            </div>
+                        </div>
+                    </form>
 
                     
                     <ul class="list-inline dev-icons">
